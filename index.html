@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Explore o Mundo de One Piece: Aventuras Além do Horizonte!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pirata+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <img class="logo" src="imgs/logo-1.png" alt="">
+            <ul>                
+                <li id="equis"><input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="imgs/toogler.png" class="icon-none" alt="">
+                    </label>
+                </li> 
+                <li><a class="active" href="#inicio">Início</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#mogiwaras">Tripulação</a></li>
+<li><a href="#sagas">Sagas</a></li>
+<li><a href="#enigma">O Enigma</a></li>
+<li><a href="#autor">Autor</a></li>
+<li><a href="#dondeVer">Onde Ver / Ler</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="inicio" class="banner-inicial">
+                <img class="letras-inicio" src="imgs/letras-chinas.png" style="opacity: .4;" alt="">
+                <img src="imgs/img-8.png" class="img-personajes" alt="">
+                <img src="imgs/img-principal-luffy.png" class=" img-none" alt="">
+                <h1>Conheça o Mundo de <span>One Piece</span>, O Mangá Mais Vendido da História!</h1>
+            </div>
+            <div id="sobre" class="section-2">
+                <img src="imgs/img-1.png" alt="">
+                <div class="text">
+                    <h1>Sobre <span>One Piece</span></h1>
+                    <p>One Piece conta a história de Monkey D. Luffy e sua tripulação, os Piratas do Chapéu de Palha, em sua busca pelo maior tesouro do mundo, conhecido como o "One Piece". O mangá tem sido muito bem-sucedido e vendeu milhões de cópias ao redor do mundo. Também gerou uma adaptação para anime, filmes, videogames e uma grande variedade de mercadorias.</p>
+                </div>
+            </div>
+            <div id="mogiwaras" class="section-3">
+                <div class="text">
+                    <h1>Conheça os <span class="span-1">Chapéu de Palha</span></h1>
+                </div>
+                <div class="cont-info">
+                    <div class="info">
+                        <h3 class="cont-name-p">Monkey D. Luffy</h3>
+                        <p class="cont-info-p">Ele é o capitão dos Piratas do Chapéu de Palha e possui a habilidade de esticar seu corpo como se fosse borracha. É corajoso, impulsivo e tem um grande coração.</p>
+                        <img src="imgs/bandera-luffy.png" class="cont-img-bandera" alt="">
+                    </div>
+                    <img src="imgs/img-luffy-personaje.png" class="cont-img-personaje" alt="">
+                </div>
+                <img onclick="scrollL()" class="flecha f-izq" src="imgs/flecha-izquierda.png" alt="">
+                <div class="cont-img-mini">
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/luffy-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Monkey D Luffy</p>
+                            <p class="info">Ele é o capitão dos Piratas do Chapéu de Palha e possui a habilidade de esticar seu corpo como se fosse borracha. É corajoso, impulsivo e tem um grande coração.</p>
+                            <img src="imgs/img-luffy-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-luffy.png" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/zoro-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Roronoa Zoro</p>
+                            <p class="info">Ele é o espadachim principal do grupo e sonha em se tornar o melhor espadachim do mundo. É sério, leal e extremamente habilidoso com suas três espadas.</p>
+                            <img src="imgs/img-zoro-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-zoro.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/nami-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Nami</p>
+                            <p class="info">Ela é a navegadora do grupo e especialista em roubar tesouros e cartografar o mundo. É inteligente, astuta e tem uma grande habilidade com o clima.</p>
+                            <img src="imgs/img-nami-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-nami.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/ussop-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Usopp</p>
+                            <p class="info">Ele é um atirador especialista e mente muito para impressionar os outros. Apesar de sua covardia inicial, ele se torna um membro valioso da equipe.</p>
+                            <img src="imgs/img-usop-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-ussop.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/sanji-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Vinsmoke Sanji</p>
+                            <p class="info">Ele é o cozinheiro do grupo e tem habilidades excepcionais em artes marciais. É um cavalheiro com as mulheres e sempre luta com estilo.</p>
+                            <img src="imgs/img-sanji-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-sanji.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/chopper-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Tony Tony Chopper</p>
+                            <p class="info">Ele é uma rena que consumiu uma Fruta do Diabo e pode se transformar em humano. É o médico do grupo e é extremamente fofo e amigável.</p>
+                            <img src="imgs/img-chopper-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-chopper.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/robin-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Nico Robin</p>
+                            <p class="info">Ela é uma arqueóloga com conhecimentos sobre a história antiga do mundo. Tem a habilidade de criar múltiplos braços devido a uma Fruta do Diabo que comeu.</p>
+                            <img src="imgs/img-robin-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-robin.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/franki-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Franky</p>
+                            <p class="info">Ele é um ciborgue com habilidades de engenharia que pode se transformar em várias formas. É o carpinteiro do grupo e tem uma personalidade extravagante.</p>
+                            <img src="imgs/img-franki-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-frankie.JPG" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                    <div class="cont-info-p" onclick="updatePersonaje(this)">
+                        <img src="imgs/brook-mini.JPG" alt="">
+                        <div class="div-none">
+                            <p class="name">Brook</p>
+                            <p class="info">Ele é um esqueleto vivo e o músico da tripulação. Tem grande habilidade com a espada e pode tocar música com seu violino.</p>
+                            <img src="imgs/img-brook-personaje.png" alt="" class="img-personaje">
+                            <img src="imgs/bandera-brook.png" alt="" class="img-bandera">
+                        </div>
+                    </div>
+                </div>
+                <img onclick="scrollR()" class="flecha f-de" src="imgs/flecha-derecha.png" alt="">
+            </div>
+            <div id="sagas" class="section-6">
+                <div class="cont-sagas">
+                    <h3>O Mundo Por Trás da Série</h3>
+                    <h1>As Sagas de One Piece</h1>
+                    <section class="saga-lf" id="s1">
+                        <div class="info-saga">
+                            <h2 class="title-s-1">Saga do East Blue</h2>
+                            <p>Aqui começa toda a história e vemos os começos do que será a tripulação dos Chapéu de Palha, começando com a primeira aventura de Luffy e quando o grupo começa a se formar antes de partir para o Grand Line.</p>
+                        </div>
+                        <img src="imgs/img-east-blue.png" alt="">
+                    </section>
+                    <section class="saga-rg" id="s2">
+                        <div class="info-saga">
+                            <h2>Saga de Arabasta</h2>
+                            <p>Já entramos no Grand Line e a banda continua crescendo. Antes de continuar a busca pelo One Piece, o grupo decide ajudar a princesa Nefertari Vivi a deter a guerra civil que assola seu país e deter a banda de mercenários conhecida como Baroque Works.</p>
+                        </div>
+                        <img src="imgs/img-arabasta.png" alt="">
+                    </section>
+                    <section class="saga-lf" id="s3">
+                        <div class="info-saga">
+                            <h2>Saga de Skypiea</h2>
+                            <p>Depois de deixar Arabasta para trás, o Log Pose de Nami começa a apontar em uma direção muito estranha: para cima. Há uma ilha no céu e os piratas do Going Merry não vão deixar passar a oportunidade de visitá-la, então acabam em uma terra misteriosa com um conflito que está prestes a explodir há vários anos.</p>
+                        </div>
+                        <img src="imgs/img-skypea.png" alt="">
+                    </section>
+                    <section class="saga-rg" id="s4">
+                        <div class="info-saga">
+                            <h2>Saga de Water Seven</h2>
+                            <p>Também conhecida como a Saga Enies Lobby ou a Saga CP9. Depois de deixar a ilha do Céu, o Merry precisa de reparos urgentemente, então o próximo passo na viagem é encontrar um carpinteiro para se juntar à tripulação... Embora pelo caminho os Chapéus de Palha se vejam envolvidos em uma feroz competição contra outra tripulação pirata e na busca por um antigo tesouro perdido.</p>
+                        </div>
+                        <img src="imgs/img-water-7.png" alt="">
+                    </section>
+                    <section class="saga-lf" id="s5">
+                        <div class="info-saga">
+                            <h2>Saga de Thriller Bark</h2>
+                            <p>Antes de chegarem ao Novo Mundo, a tripulação deve navegar por um mar estranho onde é muito fácil se perder para sempre. Eles acabam sendo capturados na ilha de Thriller Bark, que está cheia de zumbis e um novo vilão quer roubar suas sombras.</p>
+                        </div>
+                        <img src="imgs/img-triller.png" alt="">
+                    </section>
+                    <section class="saga-rg" id="s6">
+                        <div class="info-saga">
+                            <h2>Saga da Guerra de Marineford</h2>
+                            <p>Esta saga também é conhecida como a Saga do Pico da Guerra e marca o final da primeira parte do anime antes do salto temporal. Se as coisas já estavam ficando cada vez mais difíceis, a tripulação se separa no meio de um conflito que escala rapidamente.</p>
+                        </div>
+                        <img src="imgs/img-marineford.png" alt="">
+                    </section>
+                    <section class="saga-lf" id="s7">
+                        <div class="info-saga">
+                            <h2>Saga da Ilha dos Homens Peixes</h2>
+                            <p>Depois de um salto temporal de dois anos, a tripulação de Luffy finalmente se reúne no Arquipélago Sabaody para continuar seu caminho para o Novo Mundo... embora antes tenham que passar pela ilha dos homens peixes.</p>
+                        </div>
+                        <img src="imgs/img-isla-gyojin.png" alt="">
+                    </section>
+                    <section class="saga-rg" id="s8">
+                        <div class="info-saga">
+                            <h2>Saga de Dressrosa</h2>
+                            <p>Uma das sagas mais longas de toda a história e marca a entrada dos Chapéus de Palha no Novo Mundo. É uma região muito perigosa onde encontramos alguns dos piratas mais ferozes do Grand Line.</p>
+                        </div>
+                        <img src="imgs/img-dress-rosa.png" alt="">
+                    </section>
+                    <section class="saga-lf" id="s9">
+                        <div class="info-saga">
+                            <h2>Saga de Whole Cake Island</h2>
+                            <p>Os Chapéus de Palha se reúnem em Zou e começam a fazer os planos necessários para enfrentar Kaidou. No entanto, Sanji cai nas garras de Big Mom, uma perigosa pirata e uma dos Quatro Imperadores, então a tripulação terá que entrar de cabeça em seu território para resgatar o cozinheiro.</p>
+                        </div>
+                        <img src="imgs/img-whole-cake.png" alt="">
+                    </section>
+                    <section class="saga-rg" id="s10">
+                        <div class="info-saga">
+                            <h2>Saga do País de Wano</h2>
+                            <p>A saga em que estamos atualmente no anime e que está em andamento desde 2019. Também conhecida como a Saga dos Quatro Imperadores, com uma aliança massiva para derrotar Kaidou e o equilíbrio de poderes no mundo mais frágil do que nunca.</p>
+                        </div>
+                        <img src="imgs/img-wano.png" alt="">
+                    </section>
+                </div>
+            </div>
+            <div class="deg-bottom-6"></div>
+            <div id="enigma" class="section-5">
+                <img src="imgs/img-9.png" alt="">
+                <div class="info">
+                    <h3>O Maior Enigma de Toda a Série</h3>
+                    <h1>O Que É o One Piece?</h1>
+                    <p>O One Piece é apresentado na história como o maior tesouro do mundo e está localizado na ilha final da Grand Line, conhecida como Raftel, onde foi deixado por Gol D. Roger. No entanto, sua natureza e características exatas ainda não foram reveladas na trama. É considerado o objetivo final dos piratas e diz-se que quem o encontrar se tornará o Rei dos Piratas.</p>
+                </div>
+            </div>
+            <div id="autor" class="section-4">
+                <div class="text">
+                    <h3>A Mente por Trás da Obra</h3>
+                    <h1>Seu Autor Eiichiro Oda</h1>
+                    <p>Ele é um mangaká japonês nascido em 1º de janeiro de 1975 em Kumamoto, Japão. Oda é conhecido por ser o criador e escritor do mangá e anime One Piece, que começou a ser publicado em 1997 e se tornou uma das séries mais populares em todo o mundo.</p>
+                </div>
+            </div>
+                <img src="imgs/img-autor.png" alt="">
+            </div>
+            <div class="deg-bottom-4"></div>
+            <div id="dondeVer" class="section-7">
+                <h3>O Anime</h3>
+                <h1>Onde Posso Assistir?</h1>
+                <div class="cont-cards">
+                    <img src="imgs/logo-crunchyroll.png" alt="">
+                    <img src="imgs/logo-disnayplus.png" alt="">
+                    <img src="imgs/logo-flv.png" alt="">
+                    <img src="imgs/logo-justwacht.png" alt="">
+                    <img src="imgs/logo-nacionflix.png" alt="">
+                    <img src="imgs/logo-netfliz.png" alt="">
+                    <img src="imgs/logo-sensacine.png" alt="">
+                </div>
+            </div>
+            <div id="dondeLeer" class="section-7">
+                <h3>O Manga</h3>
+                <h1>Onde Posso Ler?</h1>
+                <div class="cont-cards">
+                    <img src="imgs/loog-opmia.png" alt="">
+                    <img src="imgs/logo-mangaplus.png" alt="">
+                    <img src="imgs/logo-inmanga.png" alt="">
+                    <img src="imgs/logo-leermagaxyz.png" alt="">
+                    <img src="imgs/logo-anime-allstar.png" alt="">
+                    <img src="imgs/logo-novelcool.svg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="cont">
+                <div class="navegacion">
+                    <h3>Navegação</h3>
+                    <ol>
+                        <a href="#inicio"><li>Início</li></a>
+                        <a href="#sobre"><li>Sobre One Piece</li></a>
+                        <a href="#mogiwaras"><li>Nossa Tripulação</li></a>
+                        <a href="#sagas"><li>Sagas</li></a>
+                        <a href="#enigma"><li>O Grande Enigma</li></a>
+                        <a href="#autor"><li>Autor</li></a>
+                        <a href="#dondeVer"><li>Onde Assistir</li></a>
+                        <a href="#dondeLeer"><li>Onde Ler</li></a>
+                    </ol>
+                </div>
+                <img src="imgs/bandera-luffy.png" class="img-footer" alt="">
+                <div class="navegacion">
+                    <h3>Redes Sociais</h3>
+                    <ol>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>TikTok</li>
+                        <li>X</li>
+                    </ol>
+                </div>
+            </div>
+            <<div class="detalles">
+                <p>One Piece &copy; 2024</p>
+            </div>
+        </footer>
+
+
+        <div id="custom-pointer">
+            <img src="imgs/espada-puntero.png" alt="">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
