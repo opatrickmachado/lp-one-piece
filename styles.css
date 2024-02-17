@@ -555,3 +555,149 @@ footer {
   }
 }
 
+/* Adiciona uma regra básica de box-sizing para todos os elementos */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Define o tamanho da fonte base e a família da fonte para o corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+/* Estilo para parágrafos */
+p {
+  font-size: 1rem; /* 1rem é igual ao tamanho da fonte base */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+  background: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+  backdrop-filter: blur(8px); /* Aplica um efeito de desfoque ao fundo */
+  height: 80px; /* Altura da barra de navegação */
+  padding: 0 20px; /* Adiciona preenchimento aos lados */
+  position: fixed; /* Fixa a barra de navegação no topo */
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Estilo para o logotipo */
+.logo {
+  width: 150px; /* Largura do logotipo */
+}
+
+/* Estilo para a lista de itens de navegação */
+nav ul {
+  display: flex; /* Exibe os itens de navegação em linha */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  height: 100%; /* Alinha verticalmente os itens */
+}
+
+nav ul li {
+  margin-left: 20px; /* Adiciona espaço entre os itens */
+}
+
+/* Estilo para links de navegação */
+nav ul li a {
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+}
+
+/* Estilo para links ativos e links ao passar o mouse */
+a.active,
+a:hover {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+/* Estilo para o botão de menu em telas menores */
+.checkbtn {
+  display: none; /* Oculta o botão por padrão */
+}
+
+/* Estilo para o banner inicial */
+.banner-inicial {
+  padding: 100px 20px; /* Adiciona preenchimento superior e inferior e um pouco nos lados */
+  text-align: center;
+}
+
+/* Estilo para o título do banner inicial */
+.banner-inicial h1 {
+  font-size: 2rem; /* Tamanho da fonte maior para títulos */
+}
+
+/* Estilo para a seção 2 */
+.section-2 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para o texto da seção 2 */
+.section-2 .text {
+  margin-top: 30px; /* Adiciona espaço acima do texto */
+}
+
+/* Estilo para a seção 3 */
+.section-3 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para a seção 4 */
+.section-4 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para a seção 5 */
+.section-5 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para a seção 6 */
+.section-6 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para a seção 7 */
+.section-7 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Estilo para o rodapé */
+footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px; /* Reduz o tamanho do logotipo para telas menores */
+  }
+
+  nav ul {
+    display: none; /* Oculta a lista de navegação */
+  }
+
+  .checkbtn {
+    display: block; /* Exibe o botão de menu */
+  }
+
+  .banner-inicial h1 {
+    font-size: 1.5rem; /* Reduz o tamanho do título do banner inicial */
+  }
+}
+
